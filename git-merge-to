@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 CURRENT_BRANCH=`git branch | grep '*' | awk '{print $2}'`
 echo "merging to branch $1"
 git pull origin $CURRENT_BRANCH
