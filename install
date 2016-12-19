@@ -1,0 +1,5 @@
+#!/bin/bash
+for f in *.sh
+do
+    ln -s `pwd`/$f /usr/local/bin/
+done
